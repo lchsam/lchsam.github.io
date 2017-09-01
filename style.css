@@ -5,10 +5,14 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: rgb(238, 255, 254);
+}
+
 .container {
   text-align: center;
   font-family: helvetica, sans-serif;
-  padding-top: 1em;
+  padding-top: 5em;
   color: hsl(0, 0%, 50%);
 }
 
@@ -46,7 +50,6 @@ p {
 }
 
 .content-container {
-  background-color: rgb(238, 255, 254);
   padding-top: 2em;
   padding-bottom: 4em;
 }
@@ -81,13 +84,13 @@ p {
   font-size: large;
   border-radius: 4px;
   color: #ffffff;
-  border: 0.06em solid rgb(75, 168, 211);
+  border: 0.1em solid rgb(75, 168, 211);
   /* Border box brings down anchor text,
   border width has to be subtracted
   off of line-height for centering */
   background-color: rgb(54, 158, 204);
   height: 3em;
-  line-height: 2.94em;
+  line-height: 2.9em;
   width: 80%;
   margin-bottom: 0.5em;
 }
