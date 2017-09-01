@@ -1,8 +1,16 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -12,7 +20,6 @@ body {
 .container {
   text-align: center;
   font-family: helvetica, sans-serif;
-  padding-top: 5em;
   color: hsl(0, 0%, 50%);
 }
 
@@ -49,10 +56,13 @@ p {
   max-width: 80%
 }
 
+
+/*
 .content-container {
   padding-top: 2em;
   padding-bottom: 4em;
 }
+*/
 
 .footer {
   padding-top: 2em;
@@ -69,12 +79,10 @@ p {
 .buttons {
   padding-top: 2em;
   padding-bottom: 1em;
-  
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-  
   align-items: center;
   justify-content: center;
 }
@@ -110,6 +118,12 @@ p {
 }
 
 @media screen and (min-width: 426px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+  }
   .buttons {
     -webkit-flex-direction: row;
     flex-direction: row;
@@ -118,5 +132,13 @@ p {
     width: 8em;
     margin-left: 0.75em;
     margin-right: 0.75em;
+  }
+}
+
+
+
+@media screen and (max-height: 640px) {
+  .container {
+    height: auto;
   }
 }
