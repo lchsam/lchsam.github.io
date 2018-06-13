@@ -8,11 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   background-color: rgb(238, 255, 254);
 }
