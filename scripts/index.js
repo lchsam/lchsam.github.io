@@ -19,7 +19,7 @@ const init = () => {
         let animationTimeline = anime.timeline();
         animationTimeline.add({
             targets: '#name',
-            translateY: [10, 0],
+            translateY: [50, 0],
             scale: '0.8',
             easing: 'easeOutExpo',
         }).add({
@@ -27,7 +27,7 @@ const init = () => {
             translateY: [50, 0],
             opacity: 1,
             easing: 'easeOutExpo',
-            offset: 100,
+            offset: 80,
             delay: (target, index) => index * 80,
         });
     };

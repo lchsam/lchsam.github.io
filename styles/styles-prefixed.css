@@ -1,3 +1,8 @@
+/*
+* Generated css with prefix
+* File generated manually from: https://autoprefixer.github.io/
+*/
+
 html, body {
     background-color: rgb(247, 251, 255);
     width: 100%;
@@ -5,9 +10,18 @@ html, body {
     margin: 0;
     overflow: hidden;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 1.4em;
 }
 
@@ -22,7 +36,9 @@ div {
     max-width: 800px;
     margin: 0 auto;
     margin-top: -150px;
-    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+            transform: translateY(50px);
 }
 
 .stuff {
@@ -40,6 +56,8 @@ div {
 a.button {
     position: relative;
     text-decoration: none;
+    -webkit-transition: 0.3s color ease;
+    -o-transition: 0.3s color ease;
     transition: 0.3s color ease;
     font-size: 80%;
     letter-spacing: 3px;
@@ -52,7 +70,9 @@ a.button {
     z-index: 1;
     margin: 0.2em 0.8em;
     opacity: 0; /* initial opacity of zero */
-    transform: translateY(70px);
+    -webkit-transform: translateY(70px);
+        -ms-transform: translateY(70px);
+            transform: translateY(70px);
     
 }
 
@@ -71,7 +91,11 @@ a.button:hover {
 }
 
 .button::before {
+    -webkit-transition: 0.45s all ease;
+    -o-transition: 0.45s all ease;
     transition: 0.45s all ease;
+    -webkit-transition-property: opacity, left, right;
+    -o-transition-property: opacity, left, right;
     transition-property: opacity, left, right;
     /* Properties overrides all */
     position: absolute;
@@ -114,7 +138,6 @@ a.button:hover {
         margin-top: -40px;
     }
 }
-
 
 
 
