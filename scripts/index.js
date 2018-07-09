@@ -1,13 +1,13 @@
+let nameAnimation = lottie.loadAnimation({
+    container: document.getElementById('name'), // the dom element that will contain the animation
+    name: 'nameAnimation',
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'data.json' // the path to the animation json
+});
+
 const init = () => {
-    let nameAnimation = lottie.loadAnimation({
-        container: document.getElementById('name'), // the dom element that will contain the animation
-        name: 'nameAnimation',
-        renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: 'data.json' // the path to the animation json
-    });
-    
     // Play the animation when the json file is completely loaded.
     nameAnimation.addEventListener('data_ready', () => lottie.play('nameAnimation'));
     
