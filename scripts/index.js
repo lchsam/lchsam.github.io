@@ -4,7 +4,7 @@ let nameAnimation = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: true,
-    path: 'data.json' // the path to the animation json
+    path: 'data.json' // the path to the animation json file
 });
 
 const init = () => {
@@ -16,10 +16,15 @@ const init = () => {
         let buttons = document.getElementsByClassName("button");
         [].forEach.call(buttons, (elem) => elem.classList.remove('inactiveLink'));
         // `buttons` is not actually an array so it doesn't have forEach
+        /**
+         * I wonder if I can just abandon animejs entirely
+         * and use css transitions instead, will that be faster/take up less
+         * resources?
+         */
         let animationTimeline = anime.timeline();
         animationTimeline.add({
             targets: '#name',
-            translateY: [110, 0],
+            translateY: [110, 0], // start at 110
             scale: '0.8',
             easing: 'easeOutExpo',
         }).add({
