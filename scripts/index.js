@@ -18,12 +18,12 @@ const whenNameCompleted = () => {
     let animationTimeline = anime.timeline();
     animationTimeline.add({
         targets: '#name',
+        translateY: [10, 0],
         scale: '0.8',
-        translateY: -50,
         easing: 'easeOutExpo',
     }).add({
         targets: ['.description', '.button'],
-        translateY: -50,
+        translateY: [50, 0],
         opacity: 1,
         easing: 'easeOutExpo',
         offset: 100,
