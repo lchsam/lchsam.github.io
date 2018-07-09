@@ -3,7 +3,7 @@ let nameAnimation = lottie.loadAnimation({
     name: 'nameAnimation',
     renderer: 'svg',
     loop: false,
-    autoplay: true,
+    autoplay: false,
     path: 'data.json' // the path to the animation json
 });
 
