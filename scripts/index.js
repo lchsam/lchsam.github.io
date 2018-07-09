@@ -6,11 +6,15 @@ let nameAnimation = lottie.loadAnimation({
     autoplay: false,
     path: 'data.json' // the path to the animation json
 });
+let animationIsLoaded = false;
+nameAnimation.addEventListener('data_ready', () => {animationIsLoaded = true;});
 
 const init = () => {
     // Play the animation when the json file is completely loaded.
-    nameAnimation.addEventListener('data_ready', () => lottie.play('nameAnimation'));
     
+    if (animationIsLoaded) {
+        lottie.play('nameAnimation');
+    }
     // When animation is completed
     const whenNameCompleted = () => {
         let buttons = document.getElementsByClassName("button");
