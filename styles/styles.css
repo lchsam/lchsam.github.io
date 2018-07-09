@@ -66,8 +66,9 @@ a.button:hover {
 }
 
 .button::before {
-    transition: 0.3s all ease-out;
+    transition: 0.45s all ease;
     transition-property: opacity, left, right;
+    /* Properties overrides all */
     position: absolute;
     top: 0;
     left: 50%;
