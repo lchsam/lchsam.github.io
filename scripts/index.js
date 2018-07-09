@@ -19,7 +19,7 @@ const init = () => {
         let animationTimeline = anime.timeline();
         animationTimeline.add({
             targets: '#name',
-            translateY: [50, 0],
+            translateY: [110, 0],
             scale: '0.8',
             easing: 'easeOutExpo',
         }).add({

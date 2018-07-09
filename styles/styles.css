@@ -21,8 +21,8 @@ div {
     height: 300px;
     max-width: 800px;
     margin: 0 auto;
-    margin-top: -150px;
-    transform: translateY(50px);
+    margin-top: -200px;
+    transform: translateY(110px);
 }
 
 .stuff {
