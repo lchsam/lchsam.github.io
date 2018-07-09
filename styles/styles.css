@@ -4,7 +4,6 @@ html, body {
     height: 100%;
     margin: 0;
     overflow: hidden;
-
     display: -webkit-box;
 
     display: -ms-flexbox;
@@ -44,6 +43,8 @@ div {
     margin-top: -70px;
     padding: 0px 20px;
     opacity: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 a.button {
@@ -61,7 +62,7 @@ a.button {
     padding: 14px 0px;
     border-radius: 2px;
     z-index: 1;
-    margin: 0.2em 1em;
+    margin: 0.2em 0.8em;
     opacity: 0; /* initial opacity of zero */
     -webkit-transform: translateY(70px);
         -ms-transform: translateY(70px);
@@ -124,7 +125,7 @@ a.button:hover {
 
 @media screen and (min-width: 520px) {
     .html, body {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .description {
