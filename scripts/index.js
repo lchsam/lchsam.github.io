@@ -1,4 +1,3 @@
-
 let nameAnimation = lottie.loadAnimation({
     container: document.getElementById('name'), // the dom element that will contain the animation
     name: 'nameAnimation',
