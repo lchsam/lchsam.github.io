@@ -35,10 +35,10 @@ div {
     height: 300px;
     max-width: 800px;
     margin: 0 auto;
-    margin-top: -150px;
-    -webkit-transform: translateY(50px);
-        -ms-transform: translateY(50px);
-            transform: translateY(50px);
+    margin-top: -200px;
+    -webkit-transform: translateY(110px);
+        -ms-transform: translateY(110px);
+            transform: translateY(110px);
 }
 
 .stuff {
@@ -138,11 +138,3 @@ a.button:hover {
         margin-top: -40px;
     }
 }
-
-
-
-
-
-
-
-
