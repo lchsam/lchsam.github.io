@@ -17,9 +17,10 @@ const init = () => {
         [].forEach.call(buttons, (elem) => elem.classList.remove('inactiveLink'));
         // `buttons` is not actually an array so it doesn't have forEach
         /**
-         * I wonder if I can just abandon animejs entirely
-         * and use css transitions instead, will that be faster/take up less
-         * resources?
+         * I can use CSS transitions to do this but
+         * AnimeJS makes it really easy. The delays
+         * for the transitions would be a bit to deal with 
+         * if I use CSS transitions.
          */
         let animationTimeline = anime.timeline();
         animationTimeline.add({
