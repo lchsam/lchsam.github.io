@@ -1,8 +1,3 @@
-/*
-* Generated css with prefix
-* File generated manually from: https://autoprefixer.github.io/
-*/
-
 html, body {
     background-color: rgb(247, 251, 255);
     width: 100%;
@@ -33,8 +28,6 @@ div {
 
 #name {
     height: 300px;
-    max-width: 800px;
-    margin: 0 auto;
     margin-top: -200px;
     -webkit-transform: translateY(110px);
         -ms-transform: translateY(110px);
