@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "https://lchsam.github.io/littleplane/static/css/main.01956a7c.chunk.css",
+    "main.js": "https://lchsam.github.io/littleplane/static/js/main.12ae5267.chunk.js",
+    "runtime-main.js": "https://lchsam.github.io/littleplane/static/js/runtime-main.91deda45.js",
+    "static/js/2.26846053.chunk.js": "https://lchsam.github.io/littleplane/static/js/2.26846053.chunk.js",
+    "index.html": "https://lchsam.github.io/littleplane/index.html",
+    "static/js/2.26846053.chunk.js.LICENSE.txt": "https://lchsam.github.io/littleplane/static/js/2.26846053.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91deda45.js",
+    "static/js/2.26846053.chunk.js",
+    "static/css/main.01956a7c.chunk.css",
+    "static/js/main.12ae5267.chunk.js"
+  ]
+}
